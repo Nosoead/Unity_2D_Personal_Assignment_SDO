@@ -1213,6 +1213,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &357512633 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5431230601626698889, guid: 2c3b08bf1dc92c44d8a106136e37c10d, type: 3}
+  m_PrefabInstance: {fileID: 6481743385032213718}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &741465802
 GameObject:
   m_ObjectHideFlags: 0
@@ -1224,6 +1229,7 @@ GameObject:
   - component: {fileID: 741465805}
   - component: {fileID: 741465804}
   - component: {fileID: 741465803}
+  - component: {fileID: 741465806}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1305,6 +1311,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &741465806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741465802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfc2fe16a872a19458354bef814a4c54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 1613603615}
 --- !u!1 &752899492
 GameObject:
   m_ObjectHideFlags: 0
@@ -33349,6 +33368,32 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &756648167 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4882627914440311877, guid: 2c3b08bf1dc92c44d8a106136e37c10d, type: 3}
+  m_PrefabInstance: {fileID: 6481743385032213718}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &756648169
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756648167}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1abcc5aa1ba271645b30d0081cf13251, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &938529445
 GameObject:
   m_ObjectHideFlags: 0
@@ -43199,11 +43244,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1613603615 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2825976257695389373, guid: 2c3b08bf1dc92c44d8a106136e37c10d, type: 3}
+  m_PrefabInstance: {fileID: 6481743385032213718}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1835151792 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 594180262467810793, guid: 2c3b08bf1dc92c44d8a106136e37c10d, type: 3}
   m_PrefabInstance: {fileID: 6481743385032213718}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1835151793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357512633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c106c5eecc0846147851f59aa118cc28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1966382681
 GameObject:
   m_ObjectHideFlags: 0
@@ -47303,7 +47365,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5431230601626698889, guid: 2c3b08bf1dc92c44d8a106136e37c10d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1835151793}
+    - targetCorrespondingSourceObject: {fileID: 4882627914440311877, guid: 2c3b08bf1dc92c44d8a106136e37c10d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 756648169}
   m_SourcePrefab: {fileID: 100100000, guid: 2c3b08bf1dc92c44d8a106136e37c10d, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
