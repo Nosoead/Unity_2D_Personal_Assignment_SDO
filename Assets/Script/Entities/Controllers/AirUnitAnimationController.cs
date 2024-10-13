@@ -1,11 +1,12 @@
 using UnityEngine;
-public class GroundUnitAnimationController : MonoBehaviour, IAnimationController
+
+public class AirUnitAnimationController : MonoBehaviour, IAnimationController
 {
 
     protected Animator animator;
     protected ActionEventController controller;
 
-    private static readonly int IsWalking = Animator.StringToHash("IsWalking");
+    private static readonly int IsFlying = Animator.StringToHash("IsFlying");
 
     private readonly float magnitudeThreshold = 0.5f;
 
@@ -23,6 +24,6 @@ public class GroundUnitAnimationController : MonoBehaviour, IAnimationController
 
     public void OnMoveAnimation(Vector2 obj)
     {
-        animator.SetBool(IsWalking, obj.magnitude > magnitudeThreshold);
+        animator.SetBool(IsFlying, obj.magnitude > magnitudeThreshold);
     }
 }
