@@ -8,15 +8,8 @@ public class GameManager : MonoBehaviour
 {
 
     public static GameManager Instance;
-
     public GameObject StartImage;
-    public GameObject joinButton;
-    public GameObject ChosenCharacter;
-    public GameObject ChooseCharacter;
-    public GameObject ChoosePlayer;
-    public GameObject CharacterTag;
-    public Text ChooseName;
-    public Text CharacterName;
+
 
     private void Awake()
     {
@@ -33,16 +26,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (ChooseName != CharacterName)
-        {
-            ChangeNameTag();
-        }
-    }
 
-    private void ChangeNameTag()
-    {
-        if (ChooseName != null && CharacterName != null)
-            CharacterName.text = ChooseName.text;
     }
 
 }
