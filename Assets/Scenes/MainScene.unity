@@ -541,7 +541,7 @@ GameObject:
   - component: {fileID: 41485505}
   - component: {fileID: 41485504}
   m_Layer: 0
-  m_Name: Image
+  m_Name: Timer_Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43208,7 +43208,7 @@ GameObject:
   - component: {fileID: 1394048984}
   - component: {fileID: 1394048985}
   m_Layer: 0
-  m_Name: Timer
+  m_Name: UI - Timer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
